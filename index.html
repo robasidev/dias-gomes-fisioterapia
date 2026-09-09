@@ -16,27 +16,13 @@
 
 <link rel="icon" href="assets/fisioterapia-dias-gomes-logo-quadrado.png" type="image/png">
 
+<link rel="stylesheet" href="assets/styles.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
-
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          dgpink: { DEFAULT: '#C5408F', dark: '#9E3172', light: '#F6E4EF' },
-          dgteal: { DEFAULT: '#3BBAD1', dark: '#2C93A6', light: '#E4F6F9' },
-        },
-        fontFamily: {
-          sans: ['Poppins', 'sans-serif'],
-          script: ['Dancing Script', 'cursive'],
-        },
-      }
-    }
-  }
-</script>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Dancing+Script:wght@600;700&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet"></noscript>
 
 <script type="application/ld+json">
 {
@@ -132,7 +118,7 @@
     <a href="#topo" class="shrink-0">
       <picture>
         <source srcset="assets/fisioterapia-dias-gomes-logo.webp" type="image/webp">
-        <img src="assets/fisioterapia-dias-gomes-logo.png" alt="Fisioterapia Dias Gomes" width="350" height="67" class="h-9 sm:h-11 w-auto">
+        <img src="assets/fisioterapia-dias-gomes-logo.png" alt="Fisioterapia Dias Gomes" width="460" height="88" class="h-9 sm:h-11 w-auto">
       </picture>
     </a>
     <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
@@ -184,7 +170,7 @@
       <div class="rounded-3xl overflow-hidden shadow-2xl shadow-dgpink/10 border border-slate-100">
         <picture>
           <source srcset="assets/sala-fisioterapia-limao.webp" type="image/webp">
-          <img src="assets/sala-fisioterapia-limao.jpg" alt="Sala de atendimento de fisioterapia no bairro do Limão, São Paulo - Fisioterapia Dias Gomes" width="1000" height="750" class="w-full h-full object-cover">
+          <img src="assets/sala-fisioterapia-limao.jpg" alt="Sala de atendimento de fisioterapia no bairro do Limão, São Paulo - Fisioterapia Dias Gomes" width="1000" height="750" fetchpriority="high" class="w-full h-full object-cover">
         </picture>
       </div>
       <div class="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-xl px-5 py-3 border border-slate-100 hidden sm:block">
@@ -363,7 +349,7 @@
         <div class="w-24 h-24 sm:w-28 sm:h-28 mx-auto rounded-full overflow-hidden border-4 border-dgpink-light bg-slate-50 shadow-sm">
           <picture>
             <source srcset="assets/juliana-fisioterapeuta-limao.webp" type="image/webp">
-            <img src="assets/juliana-fisioterapeuta-limao.jpg" alt="Juliana, fisioterapeuta especialista em Ortopedia e Traumatologia - Fisioterapia Dias Gomes, Limão" width="500" height="749" loading="lazy" class="w-full h-full object-cover" style="object-position: 50% 20%;">
+            <img src="assets/juliana-fisioterapeuta-limao.jpg" alt="Juliana, fisioterapeuta especialista em Ortopedia e Traumatologia - Fisioterapia Dias Gomes, Limão" width="240" height="359" loading="lazy" class="w-full h-full object-cover" style="object-position: 50% 20%;">
           </picture>
         </div>
         <h3 class="font-bold text-slate-900 mt-3 sm:mt-4 text-sm sm:text-base">Juliana</h3>
@@ -380,7 +366,7 @@
         <div class="w-24 h-24 sm:w-28 sm:h-28 mx-auto rounded-full overflow-hidden border-4 border-dgpink-light bg-slate-50 shadow-sm">
           <picture>
             <source srcset="assets/michael-personal-trainer-limao.webp" type="image/webp">
-            <img src="assets/michael-personal-trainer-limao.jpg" alt="Michael, personal trainer e cofundador - Fisioterapia Dias Gomes, Limão" width="500" height="886" loading="lazy" class="w-full h-full object-cover" style="object-position: 50% 15%;">
+            <img src="assets/michael-personal-trainer-limao.jpg" alt="Michael, personal trainer e cofundador - Fisioterapia Dias Gomes, Limão" width="240" height="425" loading="lazy" class="w-full h-full object-cover" style="object-position: 50% 15%;">
           </picture>
         </div>
         <h3 class="font-bold text-slate-900 mt-3 sm:mt-4 text-sm sm:text-base">Michael</h3>
@@ -439,19 +425,19 @@
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
       <picture class="reveal">
         <source srcset="assets/cadeira-massagem-fisioterapia-limao.webp" type="image/webp">
-        <img src="assets/cadeira-massagem-fisioterapia-limao.jpg" alt="Cadeira de massagem e bicicleta ergométrica - Fisioterapia Dias Gomes, Limão" width="800" height="1422" loading="lazy" class="rounded-2xl object-cover w-full h-44 sm:h-64">
+        <img src="assets/cadeira-massagem-fisioterapia-limao.jpg" alt="Cadeira de massagem e bicicleta ergométrica - Fisioterapia Dias Gomes, Limão" width="600" height="1066" loading="lazy" class="rounded-2xl object-cover w-full h-44 sm:h-64">
       </picture>
       <picture class="reveal reveal-1">
         <source srcset="assets/equipamentos-reabilitacao-limao.webp" type="image/webp">
-        <img src="assets/equipamentos-reabilitacao-limao.jpg" alt="Equipamentos de reabilitação e escada sueca - Fisioterapia Dias Gomes, Limão" width="800" height="600" loading="lazy" class="rounded-2xl object-cover w-full h-44 sm:h-64">
+        <img src="assets/equipamentos-reabilitacao-limao.jpg" alt="Equipamentos de reabilitação e escada sueca - Fisioterapia Dias Gomes, Limão" width="600" height="450" loading="lazy" class="rounded-2xl object-cover w-full h-44 sm:h-64">
       </picture>
       <picture class="reveal reveal-2">
         <source srcset="assets/sala-espera-fisioterapia-dias-gomes-limao.webp" type="image/webp">
-        <img src="assets/sala-espera-fisioterapia-dias-gomes-limao.jpg" alt="Recepção da Fisioterapia Dias Gomes no Limão, São Paulo" width="800" height="1422" loading="lazy" class="rounded-2xl object-cover w-full h-44 sm:h-64">
+        <img src="assets/sala-espera-fisioterapia-dias-gomes-limao.jpg" alt="Recepção da Fisioterapia Dias Gomes no Limão, São Paulo" width="600" height="450" loading="lazy" class="rounded-2xl object-cover w-full h-44 sm:h-64">
       </picture>
       <picture class="reveal reveal-3">
         <source srcset="assets/maca-tratamento-fisioterapia-limao.webp" type="image/webp">
-        <img src="assets/maca-tratamento-fisioterapia-limao.jpg" alt="Maca de atendimento com equipamento de eletroestimulação - Fisioterapia Dias Gomes, Limão" width="800" height="706" loading="lazy" class="rounded-2xl object-cover w-full h-44 sm:h-64">
+        <img src="assets/maca-tratamento-fisioterapia-limao.jpg" alt="Maca de atendimento com equipamento de eletroestimulação - Fisioterapia Dias Gomes, Limão" width="600" height="529" loading="lazy" class="rounded-2xl object-cover w-full h-44 sm:h-64">
       </picture>
     </div>
   </div>
@@ -496,11 +482,18 @@
         </div>
       </div>
     </div>
-    <div class="reveal reveal-2 rounded-2xl overflow-hidden shadow-lg border border-slate-100 h-64 sm:h-72 md:h-auto">
-      <iframe
-        src="https://www.google.com/maps?q=R.%20Roque%20de%20Morais%2C%20131%20-%20Lim%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002675-031&output=embed"
-        class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        title="Mapa - Fisioterapia Dias Gomes"></iframe>
+    <div id="mapa-container" class="reveal reveal-2 relative rounded-2xl overflow-hidden shadow-lg border border-slate-100 h-64 sm:h-72 md:h-auto">
+      <button type="button" onclick="carregarMapa()" aria-label="Ver localização no mapa" class="absolute inset-0 w-full h-full group cursor-pointer">
+        <picture>
+          <source srcset="assets/mapa-preview-fisioterapia-limao.webp" type="image/webp">
+          <img src="assets/mapa-preview-fisioterapia-limao.jpg" alt="Mapa mostrando a localização da Fisioterapia Dias Gomes no Limão, São Paulo" width="1000" height="500" loading="lazy" class="w-full h-full object-cover">
+        </picture>
+        <span class="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/20 transition-colors flex items-center justify-center">
+          <span class="w-14 h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-dgpink group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M11 19a8 8 0 100-16 8 8 0 000 16zM11 8v6m-3-3h6"/></svg>
+          </span>
+        </span>
+      </button>
     </div>
   </div>
 </section>
@@ -523,7 +516,7 @@
   <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
     <picture>
       <source srcset="assets/fisioterapia-dias-gomes-logo.webp" type="image/webp">
-      <img src="assets/fisioterapia-dias-gomes-logo.png" alt="Fisioterapia Dias Gomes" width="350" height="67" class="h-8 w-auto">
+      <img src="assets/fisioterapia-dias-gomes-logo.png" alt="Fisioterapia Dias Gomes" width="460" height="88" class="h-8 w-auto">
     </picture>
     <p class="text-sm text-slate-400 text-center">R. Roque de Morais, 131 - Limão, São Paulo - SP · (11) 96148-8377</p>
     <div class="flex items-center gap-4">
@@ -550,6 +543,15 @@
 
 <script>
 document.getElementById('ano').textContent = new Date().getFullYear();
+
+// Mapa carrega só quando o usuário clica (evita ~230KB de JS do Google logo de cara)
+function carregarMapa() {
+  const container = document.getElementById('mapa-container');
+  container.innerHTML = `<iframe
+    src="https://www.google.com/maps?q=R.%20Roque%20de%20Morais%2C%20131%20-%20Lim%C3%A3o%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2002675-031&output=embed"
+    class="w-full h-full border-0" referrerpolicy="no-referrer-when-downgrade"
+    title="Mapa - Fisioterapia Dias Gomes"></iframe>`;
+}
 
 // Revelar elementos ao rolar a página
 if ('IntersectionObserver' in window) {

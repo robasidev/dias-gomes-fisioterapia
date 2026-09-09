@@ -8,9 +8,43 @@ Paulo), publicada via GitHub Pages.
 
 ## Estrutura
 
-- `index.html` — página única, Tailwind via CDN, sem build step
+- `index.html` — página única, Tailwind **compilado** (não CDN — ver seção
+  de performance abaixo)
+- `assets/styles.css` — CSS gerado, não editar à mão
 - `assets/` — logo e fotos da clínica, já otimizados pra web
 - `sitemap.xml` / `robots.txt` — SEO básico
+
+## Performance — reconstruir o CSS depois de mexer em classes do Tailwind
+
+O site usava `cdn.tailwindcss.com` (124 KiB de JS bloqueando a renderização,
+apontado pelo PageSpeed Insights). Trocado por CSS compilado e purgado:
+só ~18 KiB, sem JS de runtime.
+
+**Toda vez que adicionar/mudar uma classe Tailwind no `index.html`, rodar:**
+
+```
+npx tailwindcss@3.4.17 -i ./src-tailwind-input.css -o ./assets/styles.css --config ./tailwind.config.js --minify
+```
+
+Rodar isso **por último**, depois de terminar todas as edições de HTML da
+vez — se compilar antes e só depois adicionar uma classe nova, ela não
+existe no CSS final e simplesmente não faz efeito nenhum (já aconteceu
+aqui: o ícone do mapa saiu invisível porque o CSS tinha sido gerado antes
+da classe `group-hover:bg-slate-900/20` existir no HTML).
+
+Outras decisões de performance:
+- **Fonte do Google** carregada de forma não-bloqueante (`rel=preload` +
+  troca pra `stylesheet` no `onload`, com `<noscript>` de fallback)
+- **Mapa do Google**: o `<iframe>` de verdade só é injetado no clique
+  (função `carregarMapa()`) — o embed sozinho carrega ~230 KiB de JS do
+  Google Maps, que a maioria dos visitantes nunca usa. Por padrão mostra
+  uma imagem estática real do mapa (`assets/mapa-preview-fisioterapia-limao.*`,
+  print tirado uma vez do embed de verdade) com um ícone de lupa por cima.
+- **Cache de imagens**: o GitHub Pages não permite configurar
+  `Cache-Control` customizado (serve tudo com TTL curto, ~10min) — isso só
+  se resolve de verdade passando o domínio pela Cloudflare (mesma conta já
+  usada pro Worker de rastreio de cliques). Não dá pra corrigir enquanto o
+  site estiver só no domínio `github.io`.
 
 ## Apontar o domínio próprio (quando a clínica tiver o DNS pronto)
 
