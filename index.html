@@ -598,11 +598,15 @@ if ('IntersectionObserver' in window) {
     if (frameId) cancelAnimationFrame(frameId);
   }
 
-  const prefereReduzirMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!prefereReduzirMovimento) {
+  // Roda sempre, independente de "reduzir movimento" do sistema - é conteúdo
+  // informativo (todos os serviços aparecem escritos), não decoração pura.
+  iniciar();
+
+  // Pausa quando a seção sai da tela, só por economia de bateria/CPU.
+  if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach((entry) => (entry.isIntersecting ? iniciar() : parar()));
-    }, { threshold: 0.2 });
+    }, { threshold: 0.01 });
     io.observe(trilho);
   }
 })();
