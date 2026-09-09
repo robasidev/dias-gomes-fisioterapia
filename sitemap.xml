@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://robasidev.github.io/dias-gomes-fisioterapia/</loc>
     <lastmod>2026-09-08</lastmod>
+    <image:image>
+      <image:loc>https://robasidev.github.io/dias-gomes-fisioterapia/assets/sala-fisioterapia-limao.jpg</image:loc>
+      <image:title>Sala de atendimento de fisioterapia no Limão, São Paulo</image:title>
+      <image:geo_location>Limão, São Paulo, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://robasidev.github.io/dias-gomes-fisioterapia/assets/cadeira-massagem-fisioterapia-limao.jpg</image:loc>
+      <image:title>Cadeira de massagem e bicicleta ergométrica - Fisioterapia Dias Gomes</image:title>
+      <image:geo_location>Limão, São Paulo, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://robasidev.github.io/dias-gomes-fisioterapia/assets/equipamentos-reabilitacao-limao.jpg</image:loc>
+      <image:title>Equipamentos de reabilitação e escada sueca - Fisioterapia Dias Gomes</image:title>
+      <image:geo_location>Limão, São Paulo, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://robasidev.github.io/dias-gomes-fisioterapia/assets/sala-espera-fisioterapia-dias-gomes-limao.jpg</image:loc>
+      <image:title>Recepção da Fisioterapia Dias Gomes no Limão, São Paulo</image:title>
+      <image:geo_location>Limão, São Paulo, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://robasidev.github.io/dias-gomes-fisioterapia/assets/maca-tratamento-fisioterapia-limao.jpg</image:loc>
+      <image:title>Maca de atendimento com eletroestimulação - Fisioterapia Dias Gomes</image:title>
+      <image:geo_location>Limão, São Paulo, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://robasidev.github.io/dias-gomes-fisioterapia/assets/juliana-fisioterapeuta-limao.jpg</image:loc>
+      <image:title>Juliana, fisioterapeuta especialista em Ortopedia e Traumatologia</image:title>
+      <image:geo_location>Limão, São Paulo, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://robasidev.github.io/dias-gomes-fisioterapia/assets/michael-personal-trainer-limao.jpg</image:loc>
+      <image:title>Michael, personal trainer e cofundador da Fisioterapia Dias Gomes</image:title>
+      <image:geo_location>Limão, São Paulo, SP, Brasil</image:geo_location>
+    </image:image>
   </url>
 </urlset>
