@@ -15,6 +15,8 @@
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="assets/fisioterapia-dias-gomes-logo-quadrado.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
 
 <link rel="stylesheet" href="assets/styles.css">
 
@@ -126,7 +128,7 @@
         <img src="assets/fisioterapia-dias-gomes-logo.png" alt="Fisioterapia Dias Gomes" width="460" height="88" class="h-9 sm:h-11 w-auto">
       </picture>
     </a>
-    <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+    <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600" aria-label="Navegação principal">
       <a href="#servicos" class="hover:text-dgpink transition-colors">Serviços</a>
       <a href="#metodo-rota" class="hover:text-dgpink transition-colors">Método R.O.T.A.</a>
       <a href="#equipe" class="hover:text-dgpink transition-colors">Equipe</a>
@@ -148,7 +150,7 @@
       </button>
     </div>
   </div>
-  <nav id="menu-mobile" class="hidden md:hidden flex-col border-t border-slate-100 bg-white shadow-lg">
+  <nav id="menu-mobile" class="hidden md:hidden flex-col border-t border-slate-100 bg-white shadow-lg" aria-label="Menu mobile">
     <a href="#servicos" class="px-4 sm:px-6 py-3 text-sm font-medium text-slate-600 hover:text-dgpink hover:bg-dgteal-light/30 transition-colors">Serviços</a>
     <a href="#metodo-rota" class="px-4 sm:px-6 py-3 text-sm font-medium text-slate-600 hover:text-dgpink hover:bg-dgteal-light/30 transition-colors">Método R.O.T.A.</a>
     <a href="#equipe" class="px-4 sm:px-6 py-3 text-sm font-medium text-slate-600 hover:text-dgpink hover:bg-dgteal-light/30 transition-colors">Equipe</a>
@@ -244,7 +246,7 @@
           <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
         </div>
         <h3 class="font-bold text-slate-900 text-sm sm:text-base">Seg. a Sáb.</h3>
-        <p class="text-xs sm:text-sm text-slate-600 mt-1.5 sm:mt-2">Horário estendido pra encaixar no seu dia — sem faltar no trabalho.</p>
+        <p class="text-xs sm:text-sm text-slate-600 mt-1.5 sm:mt-2">Horário flexível, sempre agendado, pra encaixar no seu dia sem faltar no trabalho.</p>
       </div>
     </div>
   </div>
@@ -464,7 +466,7 @@
     </div>
     <div class="reveal reveal-4 text-center mt-10 sm:mt-14">
       <p class="font-script text-2xl sm:text-3xl">Você não precisa apenas de fisioterapia. Precisa de uma R.O.T.A.</p>
-      <a href="https://dias-gomes-clicks.roobertobasilio.workers.dev/ir?utm_source=site&utm_medium=botao_whatsapp&utm_campaign=mapeamento_funcional"
+      <a href="https://dias-gomes-clicks.roobertobasilio.workers.dev/ir?utm_source=site&utm_medium=botao_whatsapp&utm_campaign=avaliacao"
          target="_blank" rel="noopener"
          class="mt-6 inline-flex items-center gap-2 bg-white text-dgpink font-bold px-7 py-3.5 rounded-full hover:bg-slate-50 transition-colors shadow-xl">
         Agendar mapeamento funcional
@@ -570,7 +572,7 @@
         </div>
         <div class="flex gap-3">
           <svg class="w-5 h-5 text-dgpink shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-          <a href="https://dias-gomes-clicks.roobertobasilio.workers.dev/ir?utm_source=site&utm_medium=telefone_localizacao&utm_campaign=avaliacao" target="_blank" rel="noopener" class="text-slate-700 hover:text-dgpink transition-colors">(11) 96148-8377</a>
+          <a href="tel:+5511961488377" class="text-slate-700 hover:text-dgpink transition-colors">(11)&nbsp;96148&#8209;8377</a>
         </div>
         <div class="flex gap-3">
           <svg class="w-5 h-5 text-dgpink shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -626,7 +628,7 @@
       <source srcset="assets/fisioterapia-dias-gomes-logo.webp" type="image/webp">
       <img src="assets/fisioterapia-dias-gomes-logo.png" alt="Fisioterapia Dias Gomes" width="460" height="88" class="h-8 w-auto">
     </picture>
-    <p class="text-sm text-slate-400 text-center">R. Roque de Morais, 131 - Limão, São Paulo - SP · (11) 96148-8377</p>
+    <p class="text-sm text-slate-400 text-center">R. Roque de Morais, 131 - Limão, São Paulo - SP · <a href="tel:+5511961488377" class="hover:text-white transition-colors">(11)&nbsp;96148&#8209;8377</a></p>
     <div class="flex items-center gap-4">
       <a href="https://www.instagram.com/fisioterapiadiasgomes/" target="_blank" rel="noopener" aria-label="Instagram" class="text-slate-400 hover:text-dgpink transition-colors">
         <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
@@ -635,7 +637,7 @@
         <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.56 9.87v-6.98H7.9V12h2.54V9.8c0-2.5 1.5-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.98A10 10 0 0022 12z"/></svg>
       </a>
     </div>
-    <p class="text-sm text-slate-500">&copy; <span id="ano"></span> Fisioterapia Dias Gomes</p>
+    <p class="text-sm text-slate-400">&copy; <span id="ano"></span> Fisioterapia Dias Gomes</p>
   </div>
 </footer>
 
