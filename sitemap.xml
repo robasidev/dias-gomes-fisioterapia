@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://robasidev.github.io/dias-gomes-fisioterapia/</loc>
-    <lastmod>2026-09-08</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <image:image>
       <image:loc>https://robasidev.github.io/dias-gomes-fisioterapia/assets/sala-fisioterapia-limao.jpg</image:loc>
       <image:title>Sala de atendimento de fisioterapia no Limão, São Paulo</image:title>
@@ -39,10 +39,25 @@
       <image:title>Michael, personal trainer e cofundador da Fisioterapia Dias Gomes</image:title>
       <image:geo_location>Limão, São Paulo, SP, Brasil</image:geo_location>
     </image:image>
+    <image:image>
+      <image:loc>https://robasidev.github.io/dias-gomes-fisioterapia/assets/gabriela-fisioterapeuta-limao.jpg</image:loc>
+      <image:title>Gabriela, fisioterapeuta especialista em Gerontologia - Fisioterapia Dias Gomes</image:title>
+      <image:geo_location>Limão, São Paulo, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://robasidev.github.io/dias-gomes-fisioterapia/assets/academia-musculacao-nova-fisioterapia-limao.jpg</image:loc>
+      <image:title>Área de musculação nova da Fisioterapia Dias Gomes</image:title>
+      <image:geo_location>Limão, São Paulo, SP, Brasil</image:geo_location>
+    </image:image>
+    <image:image>
+      <image:loc>https://robasidev.github.io/dias-gomes-fisioterapia/assets/sala-musculacao-fisioterapia-limao.jpg</image:loc>
+      <image:title>Sala de musculação terapêutica da Fisioterapia Dias Gomes</image:title>
+      <image:geo_location>Limão, São Paulo, SP, Brasil</image:geo_location>
+    </image:image>
   </url>
   <url>
     <loc>https://robasidev.github.io/dias-gomes-fisioterapia/blog/index.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
   </url>
   <url>
     <loc>https://robasidev.github.io/dias-gomes-fisioterapia/blog/fisioterapia-domiciliar-limao.html</loc>
@@ -74,11 +89,19 @@
   </url>
   <url>
     <loc>https://robasidev.github.io/dias-gomes-fisioterapia/blog/metodologia-rota-limao.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
   </url>
   <url>
     <loc>https://robasidev.github.io/dias-gomes-fisioterapia/blog/avaliacao-mapeamento-funcional-limao.html</loc>
     <lastmod>2026-09-09</lastmod>
+  </url>
+  <url>
+    <loc>https://robasidev.github.io/dias-gomes-fisioterapia/blog/body-harmony-eletroestimulacao-limao.html</loc>
+    <lastmod>2026-09-10</lastmod>
+  </url>
+  <url>
+    <loc>https://robasidev.github.io/dias-gomes-fisioterapia/blog/grupo-60-mais-limao.html</loc>
+    <lastmod>2026-09-10</lastmod>
   </url>
   <url>
     <loc>https://robasidev.github.io/dias-gomes-fisioterapia/blog/drenagem-linfatica-limao.html</loc>
