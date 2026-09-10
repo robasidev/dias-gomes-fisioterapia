@@ -49,6 +49,11 @@
       <image:title>Sala de musculação terapêutica da Fisioterapia Dias Gomes</image:title>
       <image:geo_location>Limão, São Paulo, SP, Brasil</image:geo_location>
     </image:image>
+    <image:image>
+      <image:loc>https://robasidev.github.io/dias-gomes-fisioterapia/assets/sala-treino-fisioterapia-limao.jpg</image:loc>
+      <image:title>Sala de treino da Fisioterapia Dias Gomes durante atendimento</image:title>
+      <image:geo_location>Limão, São Paulo, SP, Brasil</image:geo_location>
+    </image:image>
   </url>
   <url>
     <loc>https://robasidev.github.io/dias-gomes-fisioterapia/blog/index.html</loc>
