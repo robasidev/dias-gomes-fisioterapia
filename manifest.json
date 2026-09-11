@@ -1,7 +1,7 @@
 {
   "name": "Fisioterapia Dias Gomes",
   "short_name": "Dias Gomes",
-  "start_url": "index.html",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#C5408F",

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://robasidev.github.io/dias-gomes-fisioterapia/sitemap.xml
+Sitemap: https://www.fisioterapiadiasgomes.com.br/sitemap.xml
