@@ -4,13 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4HRZPWSC03"></script>
+<!-- Google tag (gtag.js), carregado só depois do load pra não competir com o LCP -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-4HRZPWSC03');
+  window.addEventListener('load', function () {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4HRZPWSC03';
+    document.head.appendChild(s);
+  });
 </script>
 <title>Acupuntura no Limão: Alívio pra Dor e Ansiedade | Dias Gomes</title>
 <meta name="description" content="Veja como a acupuntura ajuda a tratar dor crônica, estresse e ansiedade, com a acupunturista da Fisioterapia Dias Gomes, no Limão, São Paulo.">

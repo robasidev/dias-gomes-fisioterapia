@@ -4,13 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4HRZPWSC03"></script>
+<!-- Google tag (gtag.js), carregado só depois do load pra não competir com o LCP -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-4HRZPWSC03');
+  window.addEventListener('load', function () {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4HRZPWSC03';
+    document.head.appendChild(s);
+  });
 </script>
 <title>Fisioterapia Ortopédica: Dores Articulares | Dias Gomes</title>
 <meta name="description" content="Saiba como a fisioterapia ortopédica trata dores articulares, lesões e desgaste, com a especialista em Ortopedia e Traumatologia da Fisioterapia Dias Gomes.">

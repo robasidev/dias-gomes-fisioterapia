@@ -4,13 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4HRZPWSC03"></script>
+<!-- Google tag (gtag.js), carregado só depois do load pra não competir com o LCP -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'G-4HRZPWSC03');
+  window.addEventListener('load', function () {
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-4HRZPWSC03';
+    document.head.appendChild(s);
+  });
 </script>
 <title>Fisioterapia Dias Gomes | Clínica no Limão, SP</title>
 <meta name="description" content="Fisioterapia e reabilitação no Limão, SP e região (Casa Verde, Freguesia do Ó, Cachoeirinha, Santana). Atendimento domiciliar. Agende pelo WhatsApp.">
@@ -212,8 +217,8 @@
     <div class="relative reveal">
       <div class="rounded-3xl overflow-hidden shadow-2xl shadow-dgpink/10 border border-slate-100">
         <picture>
-          <source srcset="assets/sala-fisioterapia-limao.webp" type="image/webp">
-          <img src="assets/sala-fisioterapia-limao.jpg" alt="Sala de atendimento de fisioterapia no bairro do Limão, São Paulo - Fisioterapia Dias Gomes" width="800" height="599" fetchpriority="high" class="w-full h-full object-cover">
+          <source srcset="assets/sala-fisioterapia-limao-mobile.webp 700w, assets/sala-fisioterapia-limao.webp 800w" sizes="(min-width: 768px) 524px, 100vw" type="image/webp">
+          <img src="assets/sala-fisioterapia-limao.jpg" srcset="assets/sala-fisioterapia-limao-mobile.jpg 700w, assets/sala-fisioterapia-limao.jpg 800w" sizes="(min-width: 768px) 524px, 100vw" alt="Sala de atendimento de fisioterapia no bairro do Limão, São Paulo - Fisioterapia Dias Gomes" width="800" height="599" fetchpriority="high" class="w-full h-full object-cover">
         </picture>
       </div>
       <div class="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-xl px-5 py-3 border border-slate-100 hidden sm:block">
