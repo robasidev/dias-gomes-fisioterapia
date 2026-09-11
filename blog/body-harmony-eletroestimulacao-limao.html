@@ -85,6 +85,14 @@
 </head>
 <body class="text-slate-800 antialiased">
 
+<!-- Aviso de cookies -->
+<div id="aviso-cookies" class="fixed inset-x-0 bottom-0 z-40 bg-slate-900 text-white text-xs sm:text-sm">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <p class="m-0">Usamos o Google Analytics pra entender como os visitantes usam o site. <a href="../privacidade" class="underline hover:text-dgteal-light">Saiba mais</a>.</p>
+    <button type="button" id="aviso-cookies-ok" class="shrink-0 bg-white text-slate-900 font-semibold px-4 py-1.5 rounded-full text-xs sm:text-sm">Entendi</button>
+  </div>
+</div>
+
 <header class="fixed top-0 inset-x-0 z-40 bg-white/90 backdrop-blur border-b border-slate-100">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between">
     <a href="../" class="shrink-0">
@@ -212,7 +220,7 @@
         <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 10-11.56 9.87v-6.98H7.9V12h2.54V9.8c0-2.5 1.5-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.98A10 10 0 0022 12z"/></svg>
       </a>
     </div>
-    <p class="text-sm text-slate-400">&copy; <span id="ano"></span> Fisioterapia Dias Gomes</p>
+    <p class="text-sm text-slate-400">&copy; <span id="ano"></span> Fisioterapia Dias Gomes · <a href="../privacidade" class="hover:text-white transition-colors">Política de Privacidade</a></p>
   </div>
 </footer>
 
@@ -284,6 +292,25 @@ document.getElementById('ano').textContent = new Date().getFullYear();
   btnTopo.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   window.addEventListener('scroll', atualizarVisibilidade, { passive: true });
   atualizarVisibilidade();
+})();
+
+// Aviso de cookies: mostra uma vez, lembra a escolha
+(function () {
+  const aviso = document.getElementById('aviso-cookies');
+  if (!aviso) return;
+  try {
+    if (localStorage.getItem('cookies-aceitos') === '1') {
+      aviso.remove();
+      return;
+    }
+  } catch (e) {}
+  const botao = document.getElementById('aviso-cookies-ok');
+  if (botao) {
+    botao.addEventListener('click', () => {
+      try { localStorage.setItem('cookies-aceitos', '1'); } catch (e) {}
+      aviso.remove();
+    });
+  }
 })();
 </script>
 </body>

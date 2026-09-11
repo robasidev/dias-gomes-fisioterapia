@@ -45,6 +45,14 @@
 </head>
 <body class="text-slate-800 antialiased">
 
+<!-- Aviso de cookies -->
+<div id="aviso-cookies" class="fixed inset-x-0 bottom-0 z-40 bg-slate-900 text-white text-xs sm:text-sm">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex flex-wrap items-center justify-between gap-3">
+    <p class="m-0">Usamos o Google Analytics pra entender como os visitantes usam o site. <a href="privacidade" class="underline hover:text-dgteal-light">Saiba mais</a>.</p>
+    <button type="button" id="aviso-cookies-ok" class="shrink-0 bg-white text-slate-900 font-semibold px-4 py-1.5 rounded-full text-xs sm:text-sm">Entendi</button>
+  </div>
+</div>
+
 <header class="border-b border-slate-100">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between">
     <a href="/" class="shrink-0">
@@ -83,7 +91,7 @@
       <img src="/assets/fisioterapia-dias-gomes-logo.png" alt="Fisioterapia Dias Gomes" width="460" height="88" class="h-8 w-auto">
     </picture>
     <p class="text-sm text-slate-400 text-center">R. Roque de Morais, 131 - Limão, São Paulo - SP · <a href="tel:+5511961488377" class="hover:text-white transition-colors">(11)&nbsp;96148&#8209;8377</a></p>
-    <p class="text-sm text-slate-400">&copy; <span id="ano"></span> Fisioterapia Dias Gomes</p>
+    <p class="text-sm text-slate-400">&copy; <span id="ano"></span> Fisioterapia Dias Gomes · <a href="privacidade" class="hover:text-white transition-colors">Política de Privacidade</a></p>
   </div>
 </footer>
 
@@ -98,6 +106,25 @@
   </a>
 </div>
 
-<script>document.getElementById('ano').textContent = new Date().getFullYear();</script>
+<script>document.getElementById('ano').textContent = new Date().getFullYear();
+// Aviso de cookies: mostra uma vez, lembra a escolha
+(function () {
+  const aviso = document.getElementById('aviso-cookies');
+  if (!aviso) return;
+  try {
+    if (localStorage.getItem('cookies-aceitos') === '1') {
+      aviso.remove();
+      return;
+    }
+  } catch (e) {}
+  const botao = document.getElementById('aviso-cookies-ok');
+  if (botao) {
+    botao.addEventListener('click', () => {
+      try { localStorage.setItem('cookies-aceitos', '1'); } catch (e) {}
+      aviso.remove();
+    });
+  }
+})();
+</script>
 </body>
 </html>
